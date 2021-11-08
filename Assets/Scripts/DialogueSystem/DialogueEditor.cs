@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.UIElements;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class DialogueEditor : EditorWindow
+{
+    private DialogueGraphView graphView;
+
+#if UNITY_EDITOR
+    [MenuItem("Dialogue/Dialogue Graph")]
+    public static void OpenGraph()
+    {
+        var window = GetWindow<DialogueEditor>();
+        window.titleContent = new GUIContent("Dialogue Graph");
+    }
+
+    private void OnEnable()
+    {
+        ConstructGraphView();
+        ConstructToolbar();
+    }
+
+    private void ConstructGraphView()
+    {
+        graphView = new DialogueGraphView
+        {
+            name = "Dialogue Graph"
+        };
+
+        graphView.StretchToParentSize();
+        rootVisualElement.Add(graphView);
+    }
+
+    private void ConstructToolbar()
+    {
+        var toolbar = new Toolbar();
+
+        toolbar.Add(new Button(() => RequestDataOperation(true)) { text = "Save Graph" });
+
+        rootVisualElement.Add(toolbar);
+    }
+
+    private void RequestDataOperation(bool save)
+    {
+        
+    }
+#endif
+}
