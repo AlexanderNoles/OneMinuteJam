@@ -6,7 +6,8 @@ using UnityEngine;
 [Serializable]
 public class NodeData
 {
-    public string Guid;
+    public string GUID = Guid.NewGuid().ToString();
+    public Rect position;
     public string nodeType;
     //Dialogue
     public string DialogueText;
@@ -14,4 +15,8 @@ public class NodeData
     public List<string> options = new List<string>();
     //Pause
     public float time;
+    //Comparison
+    public List<float> values = new List<float>();
+    //Custom
+    public string message;
 }

@@ -22,6 +22,7 @@ public class DialogueEditor : EditorWindow
     {
         ConstructGraphView();
         ConstructToolbar();
+        RequestDataOperation(false);
     }
 
     private void ConstructGraphView()
@@ -46,7 +47,15 @@ public class DialogueEditor : EditorWindow
 
     private void RequestDataOperation(bool save)
     {
-        
+        SaveAndLoadUtility _instance = SaveAndLoadUtility.GetInstance(graphView);
+        if (save)
+        {
+            _instance.Save();
+        }
+        else
+        {
+            _instance.Load();
+        }
     }
 #endif
 }
