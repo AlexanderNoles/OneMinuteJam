@@ -11,10 +11,12 @@ public class DialogueManagment : MonoBehaviour
 
     //Dialogue
     public static bool dialogueFinished;
+    public GameObject dialogueBox;
 
     //Choice
     private int chosenOption;
     private bool choiceChosen;
+    public GameObject choicesObject;
 
     //Pause
     private float startTime;
@@ -44,6 +46,7 @@ public class DialogueManagment : MonoBehaviour
                 break;
             }
         }
+        Debug.Log("No Starting Node");
     }
 
     private void findNextNodeInChain()
@@ -118,17 +121,21 @@ public class DialogueManagment : MonoBehaviour
         //Play current node
         if(currentNode.nodeType == "Dialogue")
         {
-            //TODO: Display dialogue on screen
+            //TODO: Display dialogue on screen 
+            dialogueBox.SetActive(true);
             if (dialogueFinished)
             {
+                dialogueBox.SetActive(false);
                 findNextNodeInChain();
             }
         }
         else if(currentNode.nodeType == "Choice")
         {
             //TODO: Display choice buttons on screen 
+            choicesObject.SetActive(true);
             if (choiceChosen)
             {
+                choicesObject.SetActive(false);
                 findNextNodeInChain();
             }
         }
