@@ -39,19 +39,58 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: 65ecc3b7-9a12-4e19-b453-16881837a9ef
+  - GUID: 2b071542-976f-4179-ab97-ddd6fea8642b
     position:
       serializedVersion: 2
-      x: 539
-      y: 83
-      width: 176
-      height: 149
-    nodeType: Choice
+      x: 473
+      y: 93
+      width: 251
+      height: 159
+    nodeType: Comparison
     DialogueText: 
-    options:
-    - sss
-    - asda
-    - 
+    options: []
+    time: 0
+    values:
+    - -1
+    - 2
+    - 3
+    message: 
+  - GUID: 79734e0c-ad04-4cad-bac8-43185aedccb2
+    position:
+      serializedVersion: 2
+      x: 822
+      y: -13
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: aaaaaaaaa
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 6cd61754-e4a7-4965-b543-aa927a395f7e
+    position:
+      serializedVersion: 2
+      x: 823
+      y: 108
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: bbbbbbbbb
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: ca759fc0-87c3-4099-b2be-7b6b207b0282
+    position:
+      serializedVersion: 2
+      x: 823
+      y: 234
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: ccccccccc
+    options: []
     time: 0
     values: []
     message: 
@@ -62,5 +101,17 @@ MonoBehaviour:
     TargetNumber: 1
   - BaseNodeGUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
     PortNumber: 0
-    TargetNodeGUID: 65ecc3b7-9a12-4e19-b453-16881837a9ef
+    TargetNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
     TargetNumber: 0
+  - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    PortNumber: 01
+    TargetNodeGUID: 79734e0c-ad04-4cad-bac8-43185aedccb2
+    TargetNumber: 1
+  - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    PortNumber: 11
+    TargetNodeGUID: 6cd61754-e4a7-4965-b543-aa927a395f7e
+    TargetNumber: 1
+  - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    PortNumber: 21
+    TargetNodeGUID: ca759fc0-87c3-4099-b2be-7b6b207b0282
+    TargetNumber: 1

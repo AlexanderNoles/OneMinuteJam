@@ -126,7 +126,6 @@ public class DialogueManagment : MonoBehaviour
         choiceChosen = false;
         checkRunning = false;
         startTimeSet = false;
-        //Debug.Log(currentNode.nodeType);
         NodeSetup();
     }
 
@@ -135,6 +134,7 @@ public class DialogueManagment : MonoBehaviour
         if(currentNode.nodeType == "Dialogue")
         {
             dialogueBox.SetActive(true);
+            dialogueFinished = false;
             dialogueBox.SendMessage("Play", currentNode.DialogueText);
         }
         else if (currentNode.nodeType == "Choice")
@@ -218,7 +218,8 @@ public class DialogueManagment : MonoBehaviour
             {
                 findNextNodeInChain();
             }
-        }       
+        }
+        gameObject.name = dialogueFinished.ToString();
     }
 
     public void SetChosenChoice(int enteredChoice)

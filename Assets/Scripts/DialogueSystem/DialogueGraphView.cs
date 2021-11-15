@@ -306,6 +306,7 @@ public class DialogueGraphView : GraphView
             node.values[newSlot.name] = evt.newValue;
         });
         newSlot.value = currentValue;
+        node.values[newSlot.name] = currentValue;
 
         var generatedPort = node.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(int)); //Type is abritary as there is no need to pass data between the nodes
         generatedPort.name = node.outputContainer.Children().Where(x => x is Port).Count().ToString() + 1;

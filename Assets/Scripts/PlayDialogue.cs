@@ -47,7 +47,7 @@ public class PlayDialogue : MonoBehaviour
         }
         else
         {
-            if(timeLeft < 0)
+            if(timeLeft < 0 && !DialogueManagment.dialogueFinished)
             {
                 DialogueManagment.dialogueFinished = true;
             }
