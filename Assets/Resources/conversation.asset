@@ -13,61 +13,6 @@ MonoBehaviour:
   m_Name: conversation
   m_EditorClassIdentifier: 
   nodes:
-  - GUID: f9643842-28ac-41b0-aed2-a673ea22d332
-    position:
-      serializedVersion: 2
-      x: 1296
-      y: 75
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 7ae7da61-532e-41ad-b24f-a158412ff941
-    position:
-      serializedVersion: 2
-      x: 1292
-      y: 206
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: a5a063c7-3543-4598-91e4-c446881419db
-    position:
-      serializedVersion: 2
-      x: 1291
-      y: 337
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 2ad4d5c6-58fc-4903-914f-90b9427c230d
-    position:
-      serializedVersion: 2
-      x: 898
-      y: 137
-      width: 251
-      height: 159
-    nodeType: Comparison
-    DialogueText: 
-    options: []
-    time: 0
-    values:
-    - 0
-    - 2
-    - 5
-    message: 
   - GUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
     position:
       serializedVersion: 2
@@ -76,33 +21,7 @@ MonoBehaviour:
       width: 136
       height: 98
     nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 55e4225d-7b8c-4ad8-b65d-8621dcd90ab6
-    position:
-      serializedVersion: 2
-      x: 453
-      y: 57
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 3cdc6464-bbeb-4c5b-ae79-25470975d439
-    position:
-      serializedVersion: 2
-      x: 687
-      y: 50
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
+    DialogueText: cringe
     options: []
     time: 0
     values: []
@@ -120,32 +39,28 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
+  - GUID: 65ecc3b7-9a12-4e19-b453-16881837a9ef
+    position:
+      serializedVersion: 2
+      x: 539
+      y: 83
+      width: 176
+      height: 149
+    nodeType: Choice
+    DialogueText: 
+    options:
+    - sss
+    - asda
+    - 
+    time: 0
+    values: []
+    message: 
   edges:
-  - BaseNodeGUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
-    PortNumber: 0
-    TargetNodeGUID: 55e4225d-7b8c-4ad8-b65d-8621dcd90ab6
-    TargetNumber: 1
-  - BaseNodeGUID: 55e4225d-7b8c-4ad8-b65d-8621dcd90ab6
-    PortNumber: 0
-    TargetNodeGUID: 3cdc6464-bbeb-4c5b-ae79-25470975d439
-    TargetNumber: 1
-  - BaseNodeGUID: 3cdc6464-bbeb-4c5b-ae79-25470975d439
-    PortNumber: 0
-    TargetNodeGUID: 2ad4d5c6-58fc-4903-914f-90b9427c230d
-    TargetNumber: 0
   - BaseNodeGUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     PortNumber: 0
     TargetNodeGUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
     TargetNumber: 1
-  - BaseNodeGUID: 2ad4d5c6-58fc-4903-914f-90b9427c230d
-    PortNumber: 01
-    TargetNodeGUID: f9643842-28ac-41b0-aed2-a673ea22d332
-    TargetNumber: 1
-  - BaseNodeGUID: 2ad4d5c6-58fc-4903-914f-90b9427c230d
-    PortNumber: 11
-    TargetNodeGUID: 7ae7da61-532e-41ad-b24f-a158412ff941
-    TargetNumber: 1
-  - BaseNodeGUID: 2ad4d5c6-58fc-4903-914f-90b9427c230d
-    PortNumber: 21
-    TargetNodeGUID: a5a063c7-3543-4598-91e4-c446881419db
-    TargetNumber: 1
+  - BaseNodeGUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
+    PortNumber: 0
+    TargetNodeGUID: 65ecc3b7-9a12-4e19-b453-16881837a9ef
+    TargetNumber: 0

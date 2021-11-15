@@ -10,13 +10,19 @@ public class DialogueManagment : MonoBehaviour
     private NodeData currentNode;
 
     //Dialogue
+    [Header("Dialogue")]
     public static bool dialogueFinished;
     public GameObject dialogueBox;
 
     //Choice
+    [Header("Choice")]
     private int chosenOption;
     private bool choiceChosen;
-    public GameObject choicesObject;
+    public GameObject threeChoicesObject;
+    public GameObject twoChoicesObject;
+    public RectTransform choiceTimeBar;
+    public float timeGivenForChoice = 5f;
+    private float timeLeft;
 
     //Pause
     private float startTime;
@@ -26,6 +32,7 @@ public class DialogueManagment : MonoBehaviour
     private float comparatorValue;
 
     //Custom
+    [Header("Custom Code")]
     public GameObject customCodeObject;
     public static bool customCodeRunning;
     private bool checkRunning;
@@ -46,7 +53,10 @@ public class DialogueManagment : MonoBehaviour
                 break;
             }
         }
-        Debug.Log("No Starting Node");
+        if(currentNode == null)
+        {
+            Debug.Log("No Starting Node");
+        }    
     }
 
     private void findNextNodeInChain()
@@ -102,6 +112,28 @@ public class DialogueManagment : MonoBehaviour
         choiceChosen = false;
         checkRunning = false;
         startTimeSet = false;
+        //Debug.Log(currentNode.nodeType);
+        NodeSetup();
+    }
+
+    private void NodeSetup()
+    {
+        if(currentNode.nodeType == "Dialogue")
+        {
+            dialogueBox.SetActive(true);
+            dialogueBox.SendMessage("Play", currentNode.DialogueText);
+        }
+        else if (currentNode.nodeType == "Choice")
+        {
+            dialogueBox.SetActive(true);
+            int amountOfOptions = currentNode.options.Where(x => x != "").Count();
+            threeChoicesObject.SetActive(amountOfOptions == 3);
+            twoChoicesObject.SetActive(amountOfOptions == 2);
+            choiceTimeBar.gameObject.SetActive(true);
+            choiceTimeBar.sizeDelta = new Vector2(100, 125.16f);
+            choiceTimeBar.anchoredPosition = new Vector2(0, 527.51f);
+            timeLeft = timeGivenForChoice;
+        }
     }
 
     private void FindTargetNode(NodeLinkData nodeLinkData)
@@ -120,9 +152,7 @@ public class DialogueManagment : MonoBehaviour
     {
         //Play current node
         if(currentNode.nodeType == "Dialogue")
-        {
-            //TODO: Display dialogue on screen 
-            dialogueBox.SetActive(true);
+        {      
             if (dialogueFinished)
             {
                 dialogueBox.SetActive(false);
@@ -131,11 +161,13 @@ public class DialogueManagment : MonoBehaviour
         }
         else if(currentNode.nodeType == "Choice")
         {
-            //TODO: Display choice buttons on screen 
-            choicesObject.SetActive(true);
-            if (choiceChosen)
+            timeLeft -= Time.deltaTime;
+            choiceTimeBar.sizeDelta = new Vector2(100 * (timeLeft/timeGivenForChoice),125.16f);
+            choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 -(timeLeft/timeGivenForChoice)), 527.51f);
+            if (choiceChosen || timeLeft < 0)
             {
-                choicesObject.SetActive(false);
+                threeChoicesObject.SetActive(false);
+                twoChoicesObject.SetActive(false);
                 findNextNodeInChain();
             }
         }
