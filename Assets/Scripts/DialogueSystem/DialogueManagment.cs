@@ -37,8 +37,11 @@ public class DialogueManagment : MonoBehaviour
     public static bool customCodeRunning;
     private bool checkRunning;
 
+    private bool running;
+
     private void Awake()
     {
+        running = true;
         _cachedContainer = Resources.Load<NodeContainer>("conversation");
         findStartNode();
     }
@@ -61,6 +64,7 @@ public class DialogueManagment : MonoBehaviour
 
     private void findNextNodeInChain()
     {
+        string cachedGUID = currentNode.GUID;
         if(currentNode.nodeType == "Choice")
         {
             if(chosenOption == 0)
@@ -108,6 +112,16 @@ public class DialogueManagment : MonoBehaviour
             }
         }
 
+        if(currentNode.GUID == cachedGUID)
+        {
+            running = false;
+            dialogueBox.SetActive(false);
+            threeChoicesObject.SetActive(false);
+            twoChoicesObject.SetActive(false);
+            choiceTimeBar.gameObject.SetActive(false);
+            return;
+        }
+
         //Reset Values
         choiceChosen = false;
         checkRunning = false;
@@ -150,58 +164,61 @@ public class DialogueManagment : MonoBehaviour
 
     private void Update()
     {
-        //Play current node
-        if(currentNode.nodeType == "Dialogue")
-        {      
-            if (dialogueFinished)
-            {
-                dialogueBox.SetActive(false);
-                findNextNodeInChain();
-            }
-        }
-        else if(currentNode.nodeType == "Choice")
+        if (running)
         {
-            timeLeft -= Time.deltaTime;
-            choiceTimeBar.sizeDelta = new Vector2(100 * (timeLeft/timeGivenForChoice),125.16f);
-            choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 -(timeLeft/timeGivenForChoice)), 527.51f);
-            if (choiceChosen || timeLeft < 0)
+            //Play current node
+            if (currentNode.nodeType == "Dialogue")
             {
-                threeChoicesObject.SetActive(false);
-                twoChoicesObject.SetActive(false);
-                findNextNodeInChain();
+                if (dialogueFinished)
+                {
+                    dialogueBox.SetActive(false);
+                    findNextNodeInChain();
+                }
             }
-        }
-        else if (currentNode.nodeType == "Pause")
-        {
-            if (!startTimeSet)
+            else if (currentNode.nodeType == "Choice")
             {
-                startTime = Time.realtimeSinceStartup;
+                timeLeft -= Time.deltaTime;
+                choiceTimeBar.sizeDelta = new Vector2(100 * (timeLeft / timeGivenForChoice), 125.16f);
+                choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 - (timeLeft / timeGivenForChoice)), 527.51f);
+                if (choiceChosen || timeLeft < 0)
+                {
+                    threeChoicesObject.SetActive(false);
+                    twoChoicesObject.SetActive(false);
+                    findNextNodeInChain();
+                }
             }
-            else
+            else if (currentNode.nodeType == "Pause")
             {
-                if(Time.realtimeSinceStartup - startTime > currentNode.time)
+                if (!startTimeSet)
+                {
+                    startTime = Time.realtimeSinceStartup;
+                }
+                else
+                {
+                    if (Time.realtimeSinceStartup - startTime > currentNode.time)
+                    {
+                        findNextNodeInChain();
+                    }
+                }
+            }
+            else if (currentNode.nodeType == "Custom")
+            {
+                if (!checkRunning)
+                {
+                    customCodeObject.SendMessage(currentNode.message);
+                    customCodeRunning = true;
+                    checkRunning = true;
+                }
+                else if (!customCodeRunning)
                 {
                     findNextNodeInChain();
                 }
             }
-        }
-        else if (currentNode.nodeType == "Custom")
-        {
-            if (!checkRunning)
-            {
-                customCodeObject.SendMessage(currentNode.message);
-                customCodeRunning = true;
-                checkRunning = true;
-            }  
-            else if (!customCodeRunning)
+            else
             {
                 findNextNodeInChain();
             }
-        }
-        else
-        {
-            findNextNodeInChain();
-        }
+        }       
     }
 
     public void SetChosenChoice(int enteredChoice)
