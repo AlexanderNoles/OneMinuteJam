@@ -11,6 +11,12 @@ public class PlayDialogue : MonoBehaviour
     private float timeLeft;
     private string targetText;
     private int letterInString;
+    private AudioSource talkingSound;
+
+    private void Start()
+    {
+        talkingSound = GetComponent<AudioSource>();
+    }
 
     public void Play(string newText)
     {
@@ -38,6 +44,7 @@ public class PlayDialogue : MonoBehaviour
                     text.text = $"{text.text}{targetText[letterInString]}";
                     ++letterInString;
                     timeLeft = timeBetweenLetters;
+                    talkingSound.Play();
                 }
                 else
                 {

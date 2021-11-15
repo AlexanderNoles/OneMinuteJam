@@ -13,19 +13,6 @@ MonoBehaviour:
   m_Name: conversation
   m_EditorClassIdentifier: 
   nodes:
-  - GUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
-    position:
-      serializedVersion: 2
-      x: 207
-      y: 136
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: cringe
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     position:
       serializedVersion: 2
@@ -38,22 +25,6 @@ MonoBehaviour:
     options: []
     time: 0
     values: []
-    message: 
-  - GUID: 2b071542-976f-4179-ab97-ddd6fea8642b
-    position:
-      serializedVersion: 2
-      x: 473
-      y: 93
-      width: 251
-      height: 159
-    nodeType: Comparison
-    DialogueText: 
-    options: []
-    time: 0
-    values:
-    - -1
-    - 2
-    - 3
     message: 
   - GUID: 79734e0c-ad04-4cad-bac8-43185aedccb2
     position:
@@ -94,6 +65,51 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
+  - GUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
+    position:
+      serializedVersion: 2
+      x: 126
+      y: 193
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: You're a little bitch
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    position:
+      serializedVersion: 2
+      x: 489
+      y: -25
+      width: 251
+      height: 159
+    nodeType: Comparison
+    DialogueText: 
+    options: []
+    time: 0
+    values:
+    - 0.9
+    - 0.5
+    - 0
+    message: 
+  - GUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    position:
+      serializedVersion: 2
+      x: 284
+      y: 48
+      width: 177
+      height: 149
+    nodeType: Choice
+    DialogueText: 
+    options:
+    - asdad
+    - asdsada
+    - sssss
+    time: 0
+    values: []
+    message: 
   edges:
   - BaseNodeGUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     PortNumber: 0
@@ -101,17 +117,33 @@ MonoBehaviour:
     TargetNumber: 1
   - BaseNodeGUID: a9591dbf-7c6e-4ed8-ab6c-369adacc3fc1
     PortNumber: 0
+    TargetNodeGUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    TargetNumber: 0
+  - BaseNodeGUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    PortNumber: 1
     TargetNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
     TargetNumber: 0
-  - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
-    PortNumber: 01
-    TargetNodeGUID: 79734e0c-ad04-4cad-bac8-43185aedccb2
+  - BaseNodeGUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    PortNumber: 2
+    TargetNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    TargetNumber: 0
+  - BaseNodeGUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    PortNumber: 3
+    TargetNodeGUID: 6cd61754-e4a7-4965-b543-aa927a395f7e
+    TargetNumber: 1
+  - BaseNodeGUID: 9f8aff83-7621-4d42-89c2-591ec62f2d07
+    PortNumber: 4
+    TargetNodeGUID: ca759fc0-87c3-4099-b2be-7b6b207b0282
     TargetNumber: 1
   - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
-    PortNumber: 11
+    PortNumber: 3
+    TargetNodeGUID: ca759fc0-87c3-4099-b2be-7b6b207b0282
+    TargetNumber: 1
+  - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
+    PortNumber: 2
     TargetNodeGUID: 6cd61754-e4a7-4965-b543-aa927a395f7e
     TargetNumber: 1
   - BaseNodeGUID: 2b071542-976f-4179-ab97-ddd6fea8642b
-    PortNumber: 21
-    TargetNodeGUID: ca759fc0-87c3-4099-b2be-7b6b207b0282
+    PortNumber: 1
+    TargetNodeGUID: 79734e0c-ad04-4cad-bac8-43185aedccb2
     TargetNumber: 1

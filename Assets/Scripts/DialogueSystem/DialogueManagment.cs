@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 public class DialogueManagment : MonoBehaviour
 {
@@ -10,16 +11,19 @@ public class DialogueManagment : MonoBehaviour
     private NodeData currentNode;
 
     //Dialogue
-    [Header("Dialogue")]
     public static bool dialogueFinished;
+    [Header("Dialogue")]
     public GameObject dialogueBox;
 
-    //Choice
-    [Header("Choice")]
+    //Choice  
     private int chosenOption;
     private bool choiceChosen;
+    [Header("Choice")]
     public GameObject threeChoicesObject;
+    private AudioSource buttonClick;
+    public TextMeshProUGUI[] threeButtonTexts;
     public GameObject twoChoicesObject;
+    public TextMeshProUGUI[] twoButtonTexts;
     public RectTransform choiceTimeBar;
     public float timeGivenForChoice = 5f;
     private float timeLeft;
@@ -42,6 +46,7 @@ public class DialogueManagment : MonoBehaviour
     private void Awake()
     {
         running = true;
+        buttonClick = GetComponent<AudioSource>();
         _cachedContainer = Resources.Load<NodeContainer>("conversation");
         findStartNode();
     }
@@ -67,18 +72,15 @@ public class DialogueManagment : MonoBehaviour
         string cachedGUID = currentNode.GUID;
         if(currentNode.nodeType == "Choice")
         {
-            if(chosenOption == 0)
+            foreach (NodeLinkData nodeLinkData in _cachedContainer.edges)
             {
-                foreach(NodeLinkData nodeLinkData in _cachedContainer.edges)
+                if (int.Parse(nodeLinkData.PortNumber) == chosenOption + 1 && nodeLinkData.BaseNodeGUID == currentNode.GUID)
                 {
-                    if (int.Parse(nodeLinkData.PortNumber) == chosenOption + 1)
-                    {
-                        FindTargetNode(nodeLinkData);
-                        break;
-                    }
+                    FindTargetNode(nodeLinkData);
+                    break;
                 }
             }
-        }
+        }       
         else if(currentNode.nodeType == "Comparison")
         {
             List<float> valuesToCompareTo = currentNode.values;
@@ -88,7 +90,7 @@ public class DialogueManagment : MonoBehaviour
                 {
                     foreach (NodeLinkData nodeLinkData in _cachedContainer.edges)
                     {
-                        if (int.Parse(nodeLinkData.PortNumber) == i+1)
+                        if (int.Parse(nodeLinkData.PortNumber) == i+1 && nodeLinkData.BaseNodeGUID == currentNode.GUID)
                         {
                             FindTargetNode(nodeLinkData);
                             break;
@@ -142,11 +144,24 @@ public class DialogueManagment : MonoBehaviour
             dialogueBox.SetActive(true);
             int amountOfOptions = currentNode.options.Where(x => x != "").Count();
             threeChoicesObject.SetActive(amountOfOptions == 3);
+            if(amountOfOptions == 3)
+            {
+                threeButtonTexts[0].text = currentNode.options[0];
+                threeButtonTexts[1].text = currentNode.options[1];
+                threeButtonTexts[2].text = currentNode.options[2];
+            }
             twoChoicesObject.SetActive(amountOfOptions == 2);
+            if(amountOfOptions == 2)
+            {
+                twoButtonTexts[0].text = currentNode.options[0];
+                twoButtonTexts[1].text = currentNode.options[1];
+            }
             choiceTimeBar.gameObject.SetActive(true);
             choiceTimeBar.sizeDelta = new Vector2(100, 125.16f);
             choiceTimeBar.anchoredPosition = new Vector2(0, 527.51f);
             timeLeft = timeGivenForChoice;
+            chosenOption = 0;
+            choiceChosen = false;
         }
     }
 
@@ -178,13 +193,19 @@ public class DialogueManagment : MonoBehaviour
             else if (currentNode.nodeType == "Choice")
             {
                 timeLeft -= Time.deltaTime;
-                choiceTimeBar.sizeDelta = new Vector2(100 * (timeLeft / timeGivenForChoice), 125.16f);
-                choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 - (timeLeft / timeGivenForChoice)), 527.51f);
+                float percentage = timeLeft / timeGivenForChoice;
+                choiceTimeBar.sizeDelta = new Vector2(100 * (percentage), 125.16f);
+                choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 - (percentage)), 527.51f);
                 if (choiceChosen || timeLeft < 0)
-                {
+                {                 
                     threeChoicesObject.SetActive(false);
                     twoChoicesObject.SetActive(false);
+                    choiceTimeBar.gameObject.SetActive(false);
                     findNextNodeInChain();
+                }
+                else
+                {
+                    SetComparatorValue(percentage);
                 }
             }
             else if (currentNode.nodeType == "Pause")
@@ -219,11 +240,11 @@ public class DialogueManagment : MonoBehaviour
                 findNextNodeInChain();
             }
         }
-        gameObject.name = dialogueFinished.ToString();
     }
 
     public void SetChosenChoice(int enteredChoice)
     {
+        buttonClick.Play();
         chosenOption = Mathf.Clamp(enteredChoice, 0, 3);
         choiceChosen = true;
     }

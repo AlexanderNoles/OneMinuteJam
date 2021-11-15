@@ -226,7 +226,7 @@ public class DialogueGraphView : GraphView
 
         //Port
         var outputPort = node.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(int)); //Type is abritary as there is no need to pass data between the nodes
-        outputPort.name = node.outputContainer.Children().Where(x => x is Port).Count().ToString() +1;
+        outputPort.name = (node.outputContainer.Children().Where(x => x is Port).Count()+1).ToString();
         outputPort.portName = "Output " + (index + 1);
         node.outputContainer.Add(outputPort);
     }
@@ -309,7 +309,7 @@ public class DialogueGraphView : GraphView
         node.values[newSlot.name] = currentValue;
 
         var generatedPort = node.InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(int)); //Type is abritary as there is no need to pass data between the nodes
-        generatedPort.name = node.outputContainer.Children().Where(x => x is Port).Count().ToString() + 1;
+        generatedPort.name = (node.outputContainer.Children().Where(x => x is Port).Count()+1).ToString();
         generatedPort.portName = "";
         node.outputContainer.Add(generatedPort);
 
