@@ -22,8 +22,10 @@ public class DialogueManagment : MonoBehaviour
     public GameObject threeChoicesObject;
     private AudioSource buttonClick;
     public TextMeshProUGUI[] threeButtonTexts;
+    public GameObject[] threeActionPrompts;
     public GameObject twoChoicesObject;
     public TextMeshProUGUI[] twoButtonTexts;
+    public GameObject[] twoActionPrompts;
     public GameObject timeBarEmpty;
     public RectTransform choiceTimeBar;
     public float timeGivenForChoice = 5f;
@@ -143,19 +145,22 @@ public class DialogueManagment : MonoBehaviour
         else if (currentNode.nodeType == "Choice")
         {
             dialogueBox.SetActive(true);
-            int amountOfOptions = currentNode.options.Where(x => x != "").Count();
+            List<string> formattedOptions = currentNode.options.Where(x => x != "").ToList();
+            int amountOfOptions = formattedOptions.Count();
             threeChoicesObject.SetActive(amountOfOptions == 3);
-            if(amountOfOptions == 3)
-            {
-                threeButtonTexts[0].text = currentNode.options[0];
-                threeButtonTexts[1].text = currentNode.options[1];
-                threeButtonTexts[2].text = currentNode.options[2];
-            }
             twoChoicesObject.SetActive(amountOfOptions == 2);
-            if(amountOfOptions == 2)
+            for (int i = 0; i < formattedOptions.Count; i++)
             {
-                twoButtonTexts[0].text = currentNode.options[0];
-                twoButtonTexts[1].text = currentNode.options[1];
+                if(amountOfOptions == 3)
+                {
+                    threeButtonTexts[i].text = currentNode.options[i].Replace("[","").Replace("]","");
+                    threeActionPrompts[i].SetActive(currentNode.options[i][0] == '[');
+                }
+                else if(amountOfOptions == 2)
+                {
+                    twoButtonTexts[i].text = currentNode.options[i].Replace("[", "").Replace("]", "");
+                    twoActionPrompts[i].SetActive(currentNode.options[i][0] == '[');
+                }
             }
             timeBarEmpty.SetActive(true);
             choiceTimeBar.sizeDelta = new Vector2(100, 125.16f);
