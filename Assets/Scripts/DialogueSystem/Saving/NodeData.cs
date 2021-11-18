@@ -8,7 +8,7 @@ public class NodeData
 {
     public string GUID = Guid.NewGuid().ToString();
     public Rect position;
-    public string nodeType;
+    public string nodeType = "null";
     //Dialogue
     public string DialogueText;
     //Choices

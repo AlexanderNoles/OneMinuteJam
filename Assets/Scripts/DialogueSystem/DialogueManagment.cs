@@ -201,6 +201,7 @@ public class DialogueManagment : MonoBehaviour
                     threeChoicesObject.SetActive(false);
                     twoChoicesObject.SetActive(false);
                     choiceTimeBar.gameObject.SetActive(false);
+                    dialogueBox.SetActive(false);
                     findNextNodeInChain();
                 }
                 else
@@ -213,6 +214,7 @@ public class DialogueManagment : MonoBehaviour
                 if (!startTimeSet)
                 {
                     startTime = Time.realtimeSinceStartup;
+                    startTimeSet = true;
                 }
                 else
                 {

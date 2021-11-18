@@ -12,6 +12,7 @@ public class PlayDialogue : MonoBehaviour
     private string targetText;
     private int letterInString;
     private AudioSource talkingSound;
+    public float timeBeforeClose = 0.2f;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class PlayDialogue : MonoBehaviour
             if (text.text == targetText)
             {
                 playing = false;
-                timeLeft = timeBetweenLetters;
+                timeLeft = timeBeforeClose;
             }
             else
             {

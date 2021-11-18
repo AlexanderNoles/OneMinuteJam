@@ -29,12 +29,15 @@ public class DialogueGraphView : GraphView
     {
         if (evt.target is GraphView || evt.target is Node)
         {
-            evt.menu.AppendAction("Create Start Node", (x) => { CreateNode(defaultNode, "Start"); });
-            evt.menu.AppendAction("Create Dialogue Node", (x) => { CreateNode(defaultNode); });
-            evt.menu.AppendAction("Create Choices Node", (x) => { CreateNode(defaultNode, "Choice"); });
-            evt.menu.AppendAction("Create Pause Node", (x) => { CreateNode(defaultNode, "Pause"); });
-            evt.menu.AppendAction("Create Comparison Node", (x) => { CreateNode(defaultNode, "Comparison"); });
-            evt.menu.AppendAction("Create Message Node", (x) => { CreateNode(defaultNode, "Custom"); });
+            //Calculate Mouse pos
+            Rect newNodeRect = new Rect(viewTransform.matrix.inverse.MultiplyPoint(evt.localMousePosition),Vector2.zero);
+
+            evt.menu.AppendAction("Create Start Node", (x) => { CreateNode(defaultNode, "Start", newNodeRect); });
+            evt.menu.AppendAction("Create Dialogue Node", (x) => { CreateNode(defaultNode, "Dialogue", newNodeRect); });
+            evt.menu.AppendAction("Create Choices Node", (x) => { CreateNode(defaultNode, "Choice", newNodeRect); });
+            evt.menu.AppendAction("Create Pause Node", (x) => { CreateNode(defaultNode, "Pause", newNodeRect); });
+            evt.menu.AppendAction("Create Comparison Node", (x) => { CreateNode(defaultNode, "Comparison", newNodeRect); });
+            evt.menu.AppendAction("Create Message Node", (x) => { CreateNode(defaultNode, "Custom", newNodeRect); });
         }
         base.BuildContextualMenu(evt);
     }
@@ -54,8 +57,13 @@ public class DialogueGraphView : GraphView
 
 
 
-    public void CreateNode(NodeData nodeData, string nodeType = "Dialogue")
+    public void CreateNode(NodeData nodeData, string nodeType = "Dialogue", Rect newPos = new Rect())
     {
+        if (nodeData.nodeType == "null")    //If new node
+        {
+            nodeData.position = newPos;
+        }
+
         if(nodeType == "Dialogue")
         {
             AddElement(CreateDialogueNode(nodeData));
@@ -134,7 +142,7 @@ public class DialogueGraphView : GraphView
         var newNode = new CustomMessageNode
         {
             name = nodeData.GUID,
-            title = "Message",
+            title = "Custom",
 
             message = nodeData.message
         };

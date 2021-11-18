@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class CustomCode : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void DrawSword()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Sword Drawn");
     }
 }
