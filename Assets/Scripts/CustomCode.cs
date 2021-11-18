@@ -8,4 +8,9 @@ public class CustomCode : MonoBehaviour
     {
         Debug.Log("Sword Drawn");
     }
+
+    public void DKLaugh()
+    {
+        Debug.Log("Demon King Laughing");
+    }
 }

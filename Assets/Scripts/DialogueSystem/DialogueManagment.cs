@@ -24,6 +24,7 @@ public class DialogueManagment : MonoBehaviour
     public TextMeshProUGUI[] threeButtonTexts;
     public GameObject twoChoicesObject;
     public TextMeshProUGUI[] twoButtonTexts;
+    public GameObject timeBarEmpty;
     public RectTransform choiceTimeBar;
     public float timeGivenForChoice = 5f;
     private float timeLeft;
@@ -120,7 +121,7 @@ public class DialogueManagment : MonoBehaviour
             dialogueBox.SetActive(false);
             threeChoicesObject.SetActive(false);
             twoChoicesObject.SetActive(false);
-            choiceTimeBar.gameObject.SetActive(false);
+            timeBarEmpty.SetActive(false);
             return;
         }
 
@@ -156,7 +157,7 @@ public class DialogueManagment : MonoBehaviour
                 twoButtonTexts[0].text = currentNode.options[0];
                 twoButtonTexts[1].text = currentNode.options[1];
             }
-            choiceTimeBar.gameObject.SetActive(true);
+            timeBarEmpty.SetActive(true);
             choiceTimeBar.sizeDelta = new Vector2(100, 125.16f);
             choiceTimeBar.anchoredPosition = new Vector2(0, 527.51f);
             timeLeft = timeGivenForChoice;
@@ -194,13 +195,13 @@ public class DialogueManagment : MonoBehaviour
             {
                 timeLeft -= Time.deltaTime;
                 float percentage = timeLeft / timeGivenForChoice;
-                choiceTimeBar.sizeDelta = new Vector2(100 * (percentage), 125.16f);
-                choiceTimeBar.anchoredPosition = new Vector2(-1000 * (1 - (percentage)), 527.51f);
+                choiceTimeBar.sizeDelta = new Vector2(25 * (percentage), 0.5f);
+                choiceTimeBar.anchoredPosition = new Vector2(-12.5f * (1 - (percentage)), 0f);
                 if (choiceChosen || timeLeft < 0)
                 {                 
                     threeChoicesObject.SetActive(false);
                     twoChoicesObject.SetActive(false);
-                    choiceTimeBar.gameObject.SetActive(false);
+                    timeBarEmpty.SetActive(false);
                     dialogueBox.SetActive(false);
                     findNextNodeInChain();
                 }
