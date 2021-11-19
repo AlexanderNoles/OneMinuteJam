@@ -30,6 +30,7 @@ public class DialogueManagment : MonoBehaviour
     public RectTransform choiceTimeBar;
     public float timeGivenForChoice = 5f;
     private float timeLeft;
+    public static float extraTime;
 
     //Pause
     private float startTime;
@@ -208,6 +209,10 @@ public class DialogueManagment : MonoBehaviour
                     twoChoicesObject.SetActive(false);
                     timeBarEmpty.SetActive(false);
                     dialogueBox.SetActive(false);
+                    if(timeLeft > 0)
+                    {
+                        extraTime += timeLeft;
+                    }
                     findNextNodeInChain();
                 }
                 else
@@ -233,10 +238,10 @@ public class DialogueManagment : MonoBehaviour
             else if (currentNode.nodeType == "Custom")
             {
                 if (!checkRunning)
-                {
-                    customCodeObject.SendMessage(currentNode.message);
+                {                   
                     customCodeRunning = true;
                     checkRunning = true;
+                    customCodeObject.SendMessage(currentNode.message);
                 }
                 else if (!customCodeRunning)
                 {

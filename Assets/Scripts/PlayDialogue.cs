@@ -32,7 +32,7 @@ public class PlayDialogue : MonoBehaviour
     {
         if (playing)
         {
-            if (text.text == targetText)
+            if (text.text == targetText.Replace("|",""))
             {
                 playing = false;
                 timeLeft = timeBeforeClose;
@@ -42,10 +42,13 @@ public class PlayDialogue : MonoBehaviour
                 //Add on a new letter 
                 if (timeLeft < 0)
                 {
-                    text.text = $"{text.text}{targetText[letterInString]}";
+                    if(targetText[letterInString] != '|')
+                    {
+                        text.text = $"{text.text}{targetText[letterInString]}";
+                        talkingSound.Play();
+                    }
                     ++letterInString;
-                    timeLeft = timeBetweenLetters;
-                    talkingSound.Play();
+                    timeLeft = timeBetweenLetters;                
                 }
                 else
                 {
