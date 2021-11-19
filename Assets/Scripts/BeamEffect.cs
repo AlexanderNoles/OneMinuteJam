@@ -10,9 +10,12 @@ public class BeamEffect : MonoBehaviour
     private float cachedScaleX;
     private List<Transform> lightEffect = new List<Transform>();
     private List<Vector3> cachedLightEffectSize = new List<Vector3>();
+    private AudioSource beamSound;
+    private bool soundPlayed;
 
     private void Start()
     {
+        beamSound = GetComponent<AudioSource>();
         cachedScaleY = transform.localScale.y;
         cachedScaleX = transform.localScale.x;
         transform.localScale = new Vector3(0,cachedScaleY);
@@ -32,6 +35,11 @@ public class BeamEffect : MonoBehaviour
             {
                 lightEffect[i].localScale = cachedLightEffectSize[i] + (Vector3.right * (Mathf.Cos(Time.time) / 10));
             }
+            if (!soundPlayed)
+            {
+                beamSound.Play();
+                soundPlayed = true;
+            }         
         }
     }
 }

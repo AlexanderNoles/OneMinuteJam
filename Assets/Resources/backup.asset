@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aae89cfabbecad34ab24872e49caeb48, type: 3}
-  m_Name: conversation
+  m_Name: backup
   m_EditorClassIdentifier: 
   nodes:
   - GUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
@@ -256,6 +256,46 @@ MonoBehaviour:
     time: 5
     values: []
     message: 
+  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
+    position:
+      serializedVersion: 2
+      x: 2632
+      y: -253
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 5
+    values: []
+    message: 
+  - GUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
+    position:
+      serializedVersion: 2
+      x: 2781
+      y: -253
+      width: 417
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I sort of expected you to at least do something when you finally
+      got here
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
+    position:
+      serializedVersion: 2
+      x: 3202
+      y: -253
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
   - GUID: e9f94cb5-87d1-4d14-8c98-0910369c5e8e
     position:
       serializedVersion: 2
@@ -278,6 +318,32 @@ MonoBehaviour:
       height: 98
     nodeType: Dialogue
     DialogueText: ...
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
+    position:
+      serializedVersion: 2
+      x: 2322
+      y: -253
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I guess...
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 974757c5-c4d6-4501-ac74-ae84a08f8c3c
+    position:
+      serializedVersion: 2
+      x: 2480
+      y: -253
+      width: 137
+      height: 98
+    nodeType: Dialogue
+    DialogueText: ..I'll take that as a yes
     options: []
     time: 0
     values: []
@@ -324,6 +390,84 @@ MonoBehaviour:
     time: 0
     values: []
     message: BurnExtraTime
+  - GUID: 8a90f292-7bc2-4aaa-b01f-29ccf7a4a09e
+    position:
+      serializedVersion: 2
+      x: 2644
+      y: -72
+      width: 284
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I mean ||you should probably do something then
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
+    position:
+      serializedVersion: 2
+      x: 2929
+      y: -71
+      width: 206
+      height: 98
+    nodeType: Dialogue
+    DialogueText: And ||well ||if I'm gonna be honest
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 0e303da2-6fae-46d3-8473-7d0b29d02afa
+    position:
+      serializedVersion: 2
+      x: 3142
+      y: -72
+      width: 170
+      height: 98
+    nodeType: Dialogue
+    DialogueText: You've sorta run out of time
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: fef3f60a-bac5-4927-bca5-38cc485663fa
+    position:
+      serializedVersion: 2
+      x: 2484
+      y: -73
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2
+    values: []
+    message: 
+  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
+    position:
+      serializedVersion: 2
+      x: 3317
+      y: -74
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
+  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
+    position:
+      serializedVersion: 2
+      x: 3458
+      y: -75
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
   - GUID: 6c4c6835-990e-4bca-9b06-74aab2518003
     position:
       serializedVersion: 2
@@ -350,150 +494,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: fef3f60a-bac5-4927-bca5-38cc485663fa
-    position:
-      serializedVersion: 2
-      x: 2474
-      y: -72
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 2
-    values: []
-    message: 
-  - GUID: 8a90f292-7bc2-4aaa-b01f-29ccf7a4a09e
-    position:
-      serializedVersion: 2
-      x: 2619
-      y: -71
-      width: 284
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I mean ||you should probably do something then
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
-    position:
-      serializedVersion: 2
-      x: 2904
-      y: -70
-      width: 206
-      height: 98
-    nodeType: Dialogue
-    DialogueText: And ||well ||if I'm gonna be honest
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 0e303da2-6fae-46d3-8473-7d0b29d02afa
-    position:
-      serializedVersion: 2
-      x: 3117
-      y: -71
-      width: 170
-      height: 98
-    nodeType: Dialogue
-    DialogueText: You've sorta run out of time
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
-    position:
-      serializedVersion: 2
-      x: 3292
-      y: -73
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: DKLaugh
-  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
-    position:
-      serializedVersion: 2
-      x: 3433
-      y: -74
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
-  - GUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
-    position:
-      serializedVersion: 2
-      x: 2329
-      y: -179
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I guess...
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 974757c5-c4d6-4501-ac74-ae84a08f8c3c
-    position:
-      serializedVersion: 2
-      x: 2473
-      y: -179
-      width: 137
-      height: 98
-    nodeType: Dialogue
-    DialogueText: ..I'll take that as a yes
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
-    position:
-      serializedVersion: 2
-      x: 2614
-      y: -178
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 5
-    values: []
-    message: 
-  - GUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    position:
-      serializedVersion: 2
-      x: 2759
-      y: -178
-      width: 417
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I sort of expected you to at least do something when you finally
-      got here
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
-    position:
-      serializedVersion: 2
-      x: 3180
-      y: -178
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
   edges:
   - BaseNodeGUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     PortNumber: 0
