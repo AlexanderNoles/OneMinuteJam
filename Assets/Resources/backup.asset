@@ -107,134 +107,11 @@ MonoBehaviour:
     time: 0.5
     values: []
     message: 
-  - GUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
-    position:
-      serializedVersion: 2
-      x: 1155
-      y: 138
-      width: 175
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I thought you would be taller
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: a0751ab2-7fda-4809-bcb6-a2338fafd60e
-    position:
-      serializedVersion: 2
-      x: 998
-      y: 466
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: DrawSword
-  - GUID: 8628024d-1fb6-4948-888b-9a3f97c122aa
-    position:
-      serializedVersion: 2
-      x: 999
-      y: 301
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 0.5
-    values: []
-    message: 
-  - GUID: 5b3479bf-8124-4859-871b-03700a7264a2
-    position:
-      serializedVersion: 2
-      x: 1155
-      y: 301
-      width: 267
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I mean you are meant to be my mortal enemy
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: b0dd34e1-7bb9-487e-b0f2-6a6f357bad4a
-    position:
-      serializedVersion: 2
-      x: 1342
-      y: 138
-      width: 164
-      height: 98
-    nodeType: Dialogue
-    DialogueText: Like more length in the leg
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
-    position:
-      serializedVersion: 2
-      x: 1522
-      y: 135
-      width: 311
-      height: 149
-    nodeType: Choice
-    DialogueText: 
-    options:
-    - Well I expected you to be scarier
-    - b
-    - 
-    time: 0
-    values: []
-    message: 
-  - GUID: b88555d8-2d9d-412a-8e21-9d99ed03bb0b
-    position:
-      serializedVersion: 2
-      x: 1850
-      y: 161
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I am plenty scary
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: fee9dcc3-72c6-406d-9ca9-3727cfab1b38
-    position:
-      serializedVersion: 2
-      x: 2213
-      y: 162
-      width: 250
-      height: 149
-    nodeType: Choice
-    DialogueText: 
-    options:
-    - I think you mean horn
-    - 
-    - 
-    time: 0
-    values: []
-    message: 
-  - GUID: 40230f85-32ff-4af4-877b-96ba9fe3cd4b
-    position:
-      serializedVersion: 2
-      x: 1999
-      y: 162
-      width: 199
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I mean just look at my cool horns
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: 63e95e28-10da-433e-9c08-9523a0b58c50
     position:
       serializedVersion: 2
-      x: 1468
-      y: -97
+      x: 1462
+      y: -186
       width: 136
       height: 98
     nodeType: Custom
@@ -246,8 +123,8 @@ MonoBehaviour:
   - GUID: 969193b6-51f6-4b78-ba21-8c70a90eafc7
     position:
       serializedVersion: 2
-      x: 1612
-      y: -95
+      x: 1606
+      y: -184
       width: 136
       height: 98
     nodeType: Pause
@@ -256,51 +133,11 @@ MonoBehaviour:
     time: 5
     values: []
     message: 
-  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
-    position:
-      serializedVersion: 2
-      x: 2632
-      y: -253
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 5
-    values: []
-    message: 
-  - GUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    position:
-      serializedVersion: 2
-      x: 2781
-      y: -253
-      width: 417
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I sort of expected you to at least do something when you finally
-      got here
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
-    position:
-      serializedVersion: 2
-      x: 3202
-      y: -253
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
   - GUID: e9f94cb5-87d1-4d14-8c98-0910369c5e8e
     position:
       serializedVersion: 2
-      x: 1897
-      y: -94
+      x: 1891
+      y: -183
       width: 193
       height: 98
     nodeType: Dialogue
@@ -312,8 +149,8 @@ MonoBehaviour:
   - GUID: db657f95-c3af-4013-96dc-8dc881a115dc
     position:
       serializedVersion: 2
-      x: 1759
-      y: -94
+      x: 1753
+      y: -183
       width: 136
       height: 98
     nodeType: Dialogue
@@ -322,37 +159,11 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
-    position:
-      serializedVersion: 2
-      x: 2322
-      y: -253
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I guess...
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 974757c5-c4d6-4501-ac74-ae84a08f8c3c
-    position:
-      serializedVersion: 2
-      x: 2480
-      y: -253
-      width: 137
-      height: 98
-    nodeType: Dialogue
-    DialogueText: ..I'll take that as a yes
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: b452f189-7dbf-4bfb-88aa-7873aadc2936
     position:
       serializedVersion: 2
-      x: 2094
-      y: -95
+      x: 2088
+      y: -184
       width: 207
       height: 149
     nodeType: Choice
@@ -364,115 +175,11 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: c43a2a3b-c8c3-4b6c-92d7-6d50fd6f22c1
-    position:
-      serializedVersion: 2
-      x: 2324
-      y: 38
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: DrawSword
-  - GUID: 7ebcbd79-5580-4f97-a877-923d6bc1a804
-    position:
-      serializedVersion: 2
-      x: 2328
-      y: -71
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BurnExtraTime
-  - GUID: 8a90f292-7bc2-4aaa-b01f-29ccf7a4a09e
-    position:
-      serializedVersion: 2
-      x: 2644
-      y: -72
-      width: 284
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I mean ||you should probably do something then
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
-    position:
-      serializedVersion: 2
-      x: 2929
-      y: -71
-      width: 206
-      height: 98
-    nodeType: Dialogue
-    DialogueText: And ||well ||if I'm gonna be honest
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: 0e303da2-6fae-46d3-8473-7d0b29d02afa
-    position:
-      serializedVersion: 2
-      x: 3142
-      y: -72
-      width: 170
-      height: 98
-    nodeType: Dialogue
-    DialogueText: You've sorta run out of time
-    options: []
-    time: 0
-    values: []
-    message: 
-  - GUID: fef3f60a-bac5-4927-bca5-38cc485663fa
-    position:
-      serializedVersion: 2
-      x: 2484
-      y: -73
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 2
-    values: []
-    message: 
-  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
-    position:
-      serializedVersion: 2
-      x: 3317
-      y: -74
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: DKLaugh
-  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
-    position:
-      serializedVersion: 2
-      x: 3458
-      y: -75
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
   - GUID: 6c4c6835-990e-4bca-9b06-74aab2518003
     position:
       serializedVersion: 2
-      x: 1009
-      y: -96
+      x: 1003
+      y: -185
       width: 136
       height: 98
     nodeType: Pause
@@ -484,14 +191,502 @@ MonoBehaviour:
   - GUID: b27bade1-15e8-4daa-bc39-3435e7cd29bf
     position:
       serializedVersion: 2
-      x: 1156
-      y: -95
+      x: 1150
+      y: -184
       width: 298
       height: 98
     nodeType: Dialogue
     DialogueText: 'Like, I expected you to at least be above my waist '
     options: []
     time: 0
+    values: []
+    message: 
+  - GUID: fef3f60a-bac5-4927-bca5-38cc485663fa
+    position:
+      serializedVersion: 2
+      x: 2468
+      y: -161
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2
+    values: []
+    message: 
+  - GUID: 8a90f292-7bc2-4aaa-b01f-29ccf7a4a09e
+    position:
+      serializedVersion: 2
+      x: 2613
+      y: -160
+      width: 284
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I mean ||you should probably do something then
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
+    position:
+      serializedVersion: 2
+      x: 2898
+      y: -159
+      width: 206
+      height: 98
+    nodeType: Dialogue
+    DialogueText: And ||well ||if I'm gonna be honest
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 0e303da2-6fae-46d3-8473-7d0b29d02afa
+    position:
+      serializedVersion: 2
+      x: 3111
+      y: -160
+      width: 170
+      height: 98
+    nodeType: Dialogue
+    DialogueText: You've sorta run out of time
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
+    position:
+      serializedVersion: 2
+      x: 2323
+      y: -268
+      width: 189
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I guess ||||I'll take that as a yes
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
+    position:
+      serializedVersion: 2
+      x: 2665
+      y: -269
+      width: 417
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I sort of expected you to at least do something when you finally
+      got here
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 49064024-7849-46a8-bc09-5a7f7a942b89
+    position:
+      serializedVersion: 2
+      x: 2750
+      y: -48
+      width: 232
+      height: 98
+    nodeType: Dialogue
+    DialogueText: Now that's more what I was expecting!
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 5a9eeb41-77dc-489a-8132-7f492691a01c
+    position:
+      serializedVersion: 2
+      x: 2609
+      y: -50
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 5
+    values: []
+    message: 
+  - GUID: 7ebcbd79-5580-4f97-a877-923d6bc1a804
+    position:
+      serializedVersion: 2
+      x: 2322
+      y: -159
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
+    position:
+      serializedVersion: 2
+      x: 2986
+      y: -49
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: FightPrep
+  - GUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    position:
+      serializedVersion: 2
+      x: 3125
+      y: -48
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: 2263970a-508d-4292-a3bd-452ceb448638
+    position:
+      serializedVersion: 2
+      x: 3265
+      y: -49
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: FightEnding
+  - GUID: c43a2a3b-c8c3-4b6c-92d7-6d50fd6f22c1
+    position:
+      serializedVersion: 2
+      x: 2322
+      y: -52
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DrawSword
+  - GUID: 6d100b80-0366-4b92-bdb5-1da02631e004
+    position:
+      serializedVersion: 2
+      x: 2467
+      y: -50
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
+  - GUID: de80ac24-3696-412a-ba69-2182d3e1611e
+    position:
+      serializedVersion: 2
+      x: 1430
+      y: 400
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: fc6e04b1-9952-429e-820e-2bec037bc870
+    position:
+      serializedVersion: 2
+      x: 1006
+      y: 401
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnHalfExtraTime
+  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
+    position:
+      serializedVersion: 2
+      x: 3286
+      y: -158
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
+  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
+    position:
+      serializedVersion: 2
+      x: 3427
+      y: -155
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
+  - GUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
+    position:
+      serializedVersion: 2
+      x: 1294
+      y: 140
+      width: 175
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I thought you would be taller
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: b0dd34e1-7bb9-487e-b0f2-6a6f357bad4a
+    position:
+      serializedVersion: 2
+      x: 1622
+      y: 142
+      width: 164
+      height: 98
+    nodeType: Dialogue
+    DialogueText: Like more length in the leg
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
+    position:
+      serializedVersion: 2
+      x: 1794
+      y: 143
+      width: 311
+      height: 149
+    nodeType: Choice
+    DialogueText: 
+    options:
+    - Well I expected you to be scarier
+    - Why?
+    - 
+    time: 0
+    values: []
+    message: 
+  - GUID: b88555d8-2d9d-412a-8e21-9d99ed03bb0b
+    position:
+      serializedVersion: 2
+      x: 2138
+      y: 192
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I am plenty scary
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: fee9dcc3-72c6-406d-9ca9-3727cfab1b38
+    position:
+      serializedVersion: 2
+      x: 2501
+      y: 193
+      width: 250
+      height: 149
+    nodeType: Choice
+    DialogueText: 
+    options:
+    - I think you mean horn
+    - b
+    - 
+    time: 0
+    values: []
+    message: 
+  - GUID: 40230f85-32ff-4af4-877b-96ba9fe3cd4b
+    position:
+      serializedVersion: 2
+      x: 2287
+      y: 193
+      width: 199
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I mean just look at my cool horns
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 97ced50b-31cb-43e4-b14c-f79942b59dc5
+    position:
+      serializedVersion: 2
+      x: 2137
+      y: 303
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 0a65d553-7467-4409-ba8f-203aa956ae79
+    position:
+      serializedVersion: 2
+      x: 1476
+      y: 141
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    position:
+      serializedVersion: 2
+      x: 1149
+      y: 138
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnHalfExtraTime
+  - GUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    position:
+      serializedVersion: 2
+      x: 2137
+      y: 75
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 4
+    values: []
+    message: 
+  - GUID: 4032178b-156a-44ac-a7fd-fc4ca812ed68
+    position:
+      serializedVersion: 2
+      x: 2290
+      y: 74
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
+    position:
+      serializedVersion: 2
+      x: 2520
+      y: -269
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2.5
+    values: []
+    message: 
+  - GUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    position:
+      serializedVersion: 2
+      x: 3089
+      y: -267
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2.5
+    values: []
+    message: 
+  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
+    position:
+      serializedVersion: 2
+      x: 3230
+      y: -267
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
+  - GUID: 5b3479bf-8124-4859-871b-03700a7264a2
+    position:
+      serializedVersion: 2
+      x: 1151
+      y: 399
+      width: 275
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I mean ||you are meant to be my mortal enemy
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 7d6d1b4e-fc5a-4968-8090-6f6a64edc7ce
+    position:
+      serializedVersion: 2
+      x: 1569
+      y: 402
+      width: 235
+      height: 98
+    nodeType: Dialogue
+    DialogueText: And I would argue I've done a lot worse
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+    position:
+      serializedVersion: 2
+      x: 1810
+      y: 403
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
+  - GUID: a0751ab2-7fda-4809-bcb6-a2338fafd60e
+    position:
+      serializedVersion: 2
+      x: 1001
+      y: 551
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DrawSword
+  - GUID: 5af28a9a-a69f-4433-a663-e7adb065e0ec
+    position:
+      serializedVersion: 2
+      x: 1956
+      y: 405
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 5
     values: []
     message: 
   edges:
@@ -519,10 +714,6 @@ MonoBehaviour:
     PortNumber: 2
     TargetNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
     TargetNumber: 0
-  - BaseNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
-    PortNumber: 1
-    TargetNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
-    TargetNumber: 1
   - BaseNodeGUID: 082f9594-9b31-4c0e-8872-ff7a2b6bcf57
     PortNumber: 1
     TargetNodeGUID: 6c4c6835-990e-4bca-9b06-74aab2518003
@@ -535,10 +726,6 @@ MonoBehaviour:
     PortNumber: 0
     TargetNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     TargetNumber: 0
-  - BaseNodeGUID: 082f9594-9b31-4c0e-8872-ff7a2b6bcf57
-    PortNumber: 3
-    TargetNodeGUID: 8628024d-1fb6-4948-888b-9a3f97c122aa
-    TargetNumber: 0
   - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     PortNumber: 2
     TargetNodeGUID: b88555d8-2d9d-412a-8e21-9d99ed03bb0b
@@ -546,14 +733,6 @@ MonoBehaviour:
   - BaseNodeGUID: b88555d8-2d9d-412a-8e21-9d99ed03bb0b
     PortNumber: 0
     TargetNodeGUID: 40230f85-32ff-4af4-877b-96ba9fe3cd4b
-    TargetNumber: 1
-  - BaseNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
-    PortNumber: 0
-    TargetNodeGUID: b0dd34e1-7bb9-487e-b0f2-6a6f357bad4a
-    TargetNumber: 1
-  - BaseNodeGUID: 8628024d-1fb6-4948-888b-9a3f97c122aa
-    PortNumber: 1
-    TargetNodeGUID: 5b3479bf-8124-4859-871b-03700a7264a2
     TargetNumber: 1
   - BaseNodeGUID: b27bade1-15e8-4daa-bc39-3435e7cd29bf
     PortNumber: 0
@@ -583,21 +762,9 @@ MonoBehaviour:
     PortNumber: 1
     TargetNodeGUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
     TargetNumber: 1
-  - BaseNodeGUID: 974757c5-c4d6-4501-ac74-ae84a08f8c3c
-    PortNumber: 0
-    TargetNodeGUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
-    TargetNumber: 0
   - BaseNodeGUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
     PortNumber: 1
     TargetNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    TargetNumber: 1
-  - BaseNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    PortNumber: 0
-    TargetNodeGUID: 5e070469-e41d-41e9-a998-e04654910b07
-    TargetNumber: 1
-  - BaseNodeGUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
-    PortNumber: 0
-    TargetNodeGUID: 974757c5-c4d6-4501-ac74-ae84a08f8c3c
     TargetNumber: 1
   - BaseNodeGUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
     PortNumber: 0
@@ -635,3 +802,91 @@ MonoBehaviour:
     PortNumber: 1
     TargetNodeGUID: db657f95-c3af-4013-96dc-8dc881a115dc
     TargetNumber: 1
+  - BaseNodeGUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
+    PortNumber: 0
+    TargetNodeGUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
+    TargetNumber: 0
+  - BaseNodeGUID: c43a2a3b-c8c3-4b6c-92d7-6d50fd6f22c1
+    PortNumber: 0
+    TargetNodeGUID: 6d100b80-0366-4b92-bdb5-1da02631e004
+    TargetNumber: 1
+  - BaseNodeGUID: 6d100b80-0366-4b92-bdb5-1da02631e004
+    PortNumber: 0
+    TargetNodeGUID: 5a9eeb41-77dc-489a-8132-7f492691a01c
+    TargetNumber: 0
+  - BaseNodeGUID: 5a9eeb41-77dc-489a-8132-7f492691a01c
+    PortNumber: 1
+    TargetNodeGUID: 49064024-7849-46a8-bc09-5a7f7a942b89
+    TargetNumber: 1
+  - BaseNodeGUID: 49064024-7849-46a8-bc09-5a7f7a942b89
+    PortNumber: 0
+    TargetNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
+    TargetNumber: 1
+  - BaseNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
+    PortNumber: 0
+    TargetNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    TargetNumber: 1
+  - BaseNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    PortNumber: 0
+    TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
+    TargetNumber: 1
+  - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
+    PortNumber: 3
+    TargetNodeGUID: 97ced50b-31cb-43e4-b14c-f79942b59dc5
+    TargetNumber: 1
+  - BaseNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
+    PortNumber: 0
+    TargetNodeGUID: 0a65d553-7467-4409-ba8f-203aa956ae79
+    TargetNumber: 1
+  - BaseNodeGUID: 0a65d553-7467-4409-ba8f-203aa956ae79
+    PortNumber: 0
+    TargetNodeGUID: b0dd34e1-7bb9-487e-b0f2-6a6f357bad4a
+    TargetNumber: 1
+  - BaseNodeGUID: 082f9594-9b31-4c0e-8872-ff7a2b6bcf57
+    PortNumber: 3
+    TargetNodeGUID: fc6e04b1-9952-429e-820e-2bec037bc870
+    TargetNumber: 1
+  - BaseNodeGUID: fc6e04b1-9952-429e-820e-2bec037bc870
+    PortNumber: 0
+    TargetNodeGUID: 5b3479bf-8124-4859-871b-03700a7264a2
+    TargetNumber: 1
+  - BaseNodeGUID: 5b3479bf-8124-4859-871b-03700a7264a2
+    PortNumber: 0
+    TargetNodeGUID: de80ac24-3696-412a-ba69-2182d3e1611e
+    TargetNumber: 1
+  - BaseNodeGUID: de80ac24-3696-412a-ba69-2182d3e1611e
+    PortNumber: 0
+    TargetNodeGUID: 7d6d1b4e-fc5a-4968-8090-6f6a64edc7ce
+    TargetNumber: 1
+  - BaseNodeGUID: 7d6d1b4e-fc5a-4968-8090-6f6a64edc7ce
+    PortNumber: 0
+    TargetNodeGUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+    TargetNumber: 1
+  - BaseNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
+    PortNumber: 1
+    TargetNodeGUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    TargetNumber: 1
+  - BaseNodeGUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    PortNumber: 0
+    TargetNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
+    TargetNumber: 1
+  - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
+    PortNumber: 1
+    TargetNodeGUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    TargetNumber: 0
+  - BaseNodeGUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    PortNumber: 1
+    TargetNodeGUID: 4032178b-156a-44ac-a7fd-fc4ca812ed68
+    TargetNumber: 1
+  - BaseNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
+    PortNumber: 0
+    TargetNodeGUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    TargetNumber: 0
+  - BaseNodeGUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    PortNumber: 1
+    TargetNodeGUID: 5e070469-e41d-41e9-a998-e04654910b07
+    TargetNumber: 1
+  - BaseNodeGUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+    PortNumber: 0
+    TargetNodeGUID: 5af28a9a-a69f-4433-a663-e7adb065e0ec
+    TargetNumber: 0

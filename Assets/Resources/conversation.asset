@@ -107,19 +107,6 @@ MonoBehaviour:
     time: 0.5
     values: []
     message: 
-  - GUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
-    position:
-      serializedVersion: 2
-      x: 1155
-      y: 138
-      width: 175
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I thought you would be taller
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: 63e95e28-10da-433e-9c08-9523a0b58c50
     position:
       serializedVersion: 2
@@ -266,19 +253,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
-    position:
-      serializedVersion: 2
-      x: 3286
-      y: -162
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: DKLaugh
   - GUID: f7c2aebc-33e2-46ab-84a9-b38f2bec6683
     position:
       serializedVersion: 2
@@ -290,19 +264,6 @@ MonoBehaviour:
     DialogueText: I guess ||||I'll take that as a yes
     options: []
     time: 0
-    values: []
-    message: 
-  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
-    position:
-      serializedVersion: 2
-      x: 2520
-      y: -269
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 5
     values: []
     message: 
   - GUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
@@ -319,32 +280,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
-    position:
-      serializedVersion: 2
-      x: 3086
-      y: -269
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
-  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
-    position:
-      serializedVersion: 2
-      x: 3427
-      y: -163
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BadEnding
   - GUID: 49064024-7849-46a8-bc09-5a7f7a942b89
     position:
       serializedVersion: 2
@@ -449,11 +384,11 @@ MonoBehaviour:
     time: 0
     values: []
     message: DKLaugh
-  - GUID: 0a65d553-7467-4409-ba8f-203aa956ae79
+  - GUID: de80ac24-3696-412a-ba69-2182d3e1611e
     position:
       serializedVersion: 2
-      x: 1337
-      y: 139
+      x: 1430
+      y: 400
       width: 136
       height: 98
     nodeType: Custom
@@ -462,11 +397,63 @@ MonoBehaviour:
     time: 0
     values: []
     message: BurnExtraTime
+  - GUID: fc6e04b1-9952-429e-820e-2bec037bc870
+    position:
+      serializedVersion: 2
+      x: 1006
+      y: 401
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnHalfExtraTime
+  - GUID: cf853eb9-c4c9-4b48-8127-62962ef1a97f
+    position:
+      serializedVersion: 2
+      x: 3286
+      y: -158
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
+  - GUID: 1efb295e-30d0-4c8b-9773-d545e5ab1b77
+    position:
+      serializedVersion: 2
+      x: 3427
+      y: -155
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
+  - GUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
+    position:
+      serializedVersion: 2
+      x: 1294
+      y: 140
+      width: 175
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I thought you would be taller
+    options: []
+    time: 0
+    values: []
+    message: 
   - GUID: b0dd34e1-7bb9-487e-b0f2-6a6f357bad4a
     position:
       serializedVersion: 2
-      x: 1483
-      y: 140
+      x: 1622
+      y: 142
       width: 164
       height: 98
     nodeType: Dialogue
@@ -478,8 +465,8 @@ MonoBehaviour:
   - GUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     position:
       serializedVersion: 2
-      x: 1655
-      y: 141
+      x: 1794
+      y: 143
       width: 311
       height: 149
     nodeType: Choice
@@ -494,8 +481,8 @@ MonoBehaviour:
   - GUID: b88555d8-2d9d-412a-8e21-9d99ed03bb0b
     position:
       serializedVersion: 2
-      x: 1999
-      y: 190
+      x: 2138
+      y: 192
       width: 136
       height: 98
     nodeType: Dialogue
@@ -507,8 +494,8 @@ MonoBehaviour:
   - GUID: fee9dcc3-72c6-406d-9ca9-3727cfab1b38
     position:
       serializedVersion: 2
-      x: 2362
-      y: 191
+      x: 2501
+      y: 193
       width: 250
       height: 149
     nodeType: Choice
@@ -523,8 +510,8 @@ MonoBehaviour:
   - GUID: 40230f85-32ff-4af4-877b-96ba9fe3cd4b
     position:
       serializedVersion: 2
-      x: 2148
-      y: 191
+      x: 2287
+      y: 193
       width: 199
       height: 98
     nodeType: Dialogue
@@ -533,24 +520,11 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: 58445a17-c9ad-48ac-a736-84ecacc59033
-    position:
-      serializedVersion: 2
-      x: 1999
-      y: 82
-      width: 136
-      height: 98
-    nodeType: Dialogue
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: 97ced50b-31cb-43e4-b14c-f79942b59dc5
     position:
       serializedVersion: 2
-      x: 1998
-      y: 301
+      x: 2137
+      y: 303
       width: 136
       height: 98
     nodeType: Dialogue
@@ -559,11 +533,11 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: de80ac24-3696-412a-ba69-2182d3e1611e
+  - GUID: 0a65d553-7467-4409-ba8f-203aa956ae79
     position:
       serializedVersion: 2
-      x: 1430
-      y: 400
+      x: 1476
+      y: 141
       width: 136
       height: 98
     nodeType: Custom
@@ -572,10 +546,101 @@ MonoBehaviour:
     time: 0
     values: []
     message: BurnExtraTime
+  - GUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    position:
+      serializedVersion: 2
+      x: 1149
+      y: 138
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnHalfExtraTime
+  - GUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    position:
+      serializedVersion: 2
+      x: 2137
+      y: 75
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 4
+    values: []
+    message: 
+  - GUID: 4032178b-156a-44ac-a7fd-fc4ca812ed68
+    position:
+      serializedVersion: 2
+      x: 2290
+      y: 74
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
+    position:
+      serializedVersion: 2
+      x: 2520
+      y: -269
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2.5
+    values: []
+    message: 
+  - GUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    position:
+      serializedVersion: 2
+      x: 3089
+      y: -267
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2.5
+    values: []
+    message: 
+  - GUID: 5e070469-e41d-41e9-a998-e04654910b07
+    position:
+      serializedVersion: 2
+      x: 3230
+      y: -267
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BadEnding
+  - GUID: 5b3479bf-8124-4859-871b-03700a7264a2
+    position:
+      serializedVersion: 2
+      x: 1151
+      y: 399
+      width: 275
+      height: 98
+    nodeType: Dialogue
+    DialogueText: I mean ||you are meant to be my mortal enemy
+    options: []
+    time: 0
+    values: []
+    message: 
   - GUID: 7d6d1b4e-fc5a-4968-8090-6f6a64edc7ce
     position:
       serializedVersion: 2
-      x: 1573
+      x: 1569
       y: 402
       width: 235
       height: 98
@@ -585,6 +650,19 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
+  - GUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+    position:
+      serializedVersion: 2
+      x: 1810
+      y: 403
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DKLaugh
   - GUID: a0751ab2-7fda-4809-bcb6-a2338fafd60e
     position:
       serializedVersion: 2
@@ -598,43 +676,17 @@ MonoBehaviour:
     time: 0
     values: []
     message: DrawSword
-  - GUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+  - GUID: 5af28a9a-a69f-4433-a663-e7adb065e0ec
     position:
       serializedVersion: 2
-      x: 1820
-      y: 401
+      x: 1956
+      y: 405
       width: 136
       height: 98
-    nodeType: Custom
+    nodeType: Pause
     DialogueText: 
     options: []
-    time: 0
-    values: []
-    message: DKLaugh
-  - GUID: fc6e04b1-9952-429e-820e-2bec037bc870
-    position:
-      serializedVersion: 2
-      x: 1006
-      y: 401
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BurnHalfExtraTime
-  - GUID: 5b3479bf-8124-4859-871b-03700a7264a2
-    position:
-      serializedVersion: 2
-      x: 1152
-      y: 402
-      width: 275
-      height: 98
-    nodeType: Dialogue
-    DialogueText: I mean ||you are meant to be my mortal enemy
-    options: []
-    time: 0
+    time: 5
     values: []
     message: 
   edges:
@@ -662,10 +714,6 @@ MonoBehaviour:
     PortNumber: 2
     TargetNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
     TargetNumber: 0
-  - BaseNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
-    PortNumber: 1
-    TargetNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
-    TargetNumber: 1
   - BaseNodeGUID: 082f9594-9b31-4c0e-8872-ff7a2b6bcf57
     PortNumber: 1
     TargetNodeGUID: 6c4c6835-990e-4bca-9b06-74aab2518003
@@ -717,10 +765,6 @@ MonoBehaviour:
   - BaseNodeGUID: 394e71e4-e397-46c6-9cef-21c22beed1ae
     PortNumber: 1
     TargetNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    TargetNumber: 1
-  - BaseNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
-    PortNumber: 0
-    TargetNodeGUID: 5e070469-e41d-41e9-a998-e04654910b07
     TargetNumber: 1
   - BaseNodeGUID: c5cd85e8-c76b-498d-957e-1913dfd6569a
     PortNumber: 0
@@ -787,10 +831,6 @@ MonoBehaviour:
     TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
     TargetNumber: 1
   - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
-    PortNumber: 1
-    TargetNodeGUID: 58445a17-c9ad-48ac-a736-84ecacc59033
-    TargetNumber: 1
-  - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     PortNumber: 3
     TargetNodeGUID: 97ced50b-31cb-43e4-b14c-f79942b59dc5
     TargetNumber: 1
@@ -822,3 +862,31 @@ MonoBehaviour:
     PortNumber: 0
     TargetNodeGUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
     TargetNumber: 1
+  - BaseNodeGUID: 206503a0-aa3f-495b-b942-5a418a2f7446
+    PortNumber: 1
+    TargetNodeGUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    TargetNumber: 1
+  - BaseNodeGUID: bc0cabe4-8802-45a8-8096-475eb94bd4e5
+    PortNumber: 0
+    TargetNodeGUID: 83e059de-875b-49ff-b9a5-4643c26a6db6
+    TargetNumber: 1
+  - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
+    PortNumber: 1
+    TargetNodeGUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    TargetNumber: 0
+  - BaseNodeGUID: 93ec83bf-f273-4b71-92f7-c4fbdd6cbc4c
+    PortNumber: 1
+    TargetNodeGUID: 4032178b-156a-44ac-a7fd-fc4ca812ed68
+    TargetNumber: 1
+  - BaseNodeGUID: b6ec4a6b-6fd9-4916-850b-6ac8c3d92ee2
+    PortNumber: 0
+    TargetNodeGUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    TargetNumber: 0
+  - BaseNodeGUID: 43130fc5-9769-47e3-baa9-b0f8362e45bd
+    PortNumber: 1
+    TargetNodeGUID: 5e070469-e41d-41e9-a998-e04654910b07
+    TargetNumber: 1
+  - BaseNodeGUID: cd232365-e5c1-44bf-8327-6b8874ed8cd7
+    PortNumber: 0
+    TargetNodeGUID: 5af28a9a-a69f-4433-a663-e7adb065e0ec
+    TargetNumber: 0

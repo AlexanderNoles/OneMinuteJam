@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CustomCode : MonoBehaviour
 {
     private bool burningTime = false;
     private bool burningHalfTime = false;
     private float halfExtraTime;
+
+    public static bool endingActive = false;
+
+    public GameObject backing;
+
+    [Header("BadEnding")]
+    public GameObject BadEndingEmpty;
 
     public void DrawSword()
     {
@@ -43,7 +51,10 @@ public class CustomCode : MonoBehaviour
     //ENDINGS
     public void BadEnding()
     {
-        Debug.Log("Bad Ending");
+        backing.GetComponent<Image>().color = Color.black;
+        backing.SetActive(true);
+        BadEndingEmpty.SetActive(true);
+        endingActive = true;
     }
 
     public void FightEnding()
