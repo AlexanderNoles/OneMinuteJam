@@ -319,45 +319,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: BurnExtraTime
-  - GUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
-    position:
-      serializedVersion: 2
-      x: 2986
-      y: -49
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: FightPrep
-  - GUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
-    position:
-      serializedVersion: 2
-      x: 3125
-      y: -48
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: BurnExtraTime
-  - GUID: 2263970a-508d-4292-a3bd-452ceb448638
-    position:
-      serializedVersion: 2
-      x: 3265
-      y: -49
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: FightEnding
   - GUID: c43a2a3b-c8c3-4b6c-92d7-6d50fd6f22c1
     position:
       serializedVersion: 2
@@ -689,6 +650,71 @@ MonoBehaviour:
     time: 5
     values: []
     message: 
+  - GUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
+    position:
+      serializedVersion: 2
+      x: 3135
+      y: -47
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: FightPrep
+  - GUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    position:
+      serializedVersion: 2
+      x: 3274
+      y: -46
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: 1081aa7e-61ba-4a09-814f-f91fc1727178
+    position:
+      serializedVersion: 2
+      x: 2986
+      y: -47
+      width: 144
+      height: 98
+    nodeType: Dialogue
+    DialogueText: One last fight it is then!
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
+    position:
+      serializedVersion: 2
+      x: 3414
+      y: -45
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 3
+    values: []
+    message: 
+  - GUID: 2263970a-508d-4292-a3bd-452ceb448638
+    position:
+      serializedVersion: 2
+      x: 3557
+      y: -45
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: FightEnding
   edges:
   - BaseNodeGUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     PortNumber: 0
@@ -818,17 +844,9 @@ MonoBehaviour:
     PortNumber: 1
     TargetNodeGUID: 49064024-7849-46a8-bc09-5a7f7a942b89
     TargetNumber: 1
-  - BaseNodeGUID: 49064024-7849-46a8-bc09-5a7f7a942b89
-    PortNumber: 0
-    TargetNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
-    TargetNumber: 1
   - BaseNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
     PortNumber: 0
     TargetNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
-    TargetNumber: 1
-  - BaseNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
-    PortNumber: 0
-    TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
     TargetNumber: 1
   - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     PortNumber: 3
@@ -890,3 +908,19 @@ MonoBehaviour:
     PortNumber: 0
     TargetNodeGUID: 5af28a9a-a69f-4433-a663-e7adb065e0ec
     TargetNumber: 0
+  - BaseNodeGUID: 49064024-7849-46a8-bc09-5a7f7a942b89
+    PortNumber: 0
+    TargetNodeGUID: 1081aa7e-61ba-4a09-814f-f91fc1727178
+    TargetNumber: 1
+  - BaseNodeGUID: 1081aa7e-61ba-4a09-814f-f91fc1727178
+    PortNumber: 0
+    TargetNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
+    TargetNumber: 1
+  - BaseNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    PortNumber: 0
+    TargetNodeGUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
+    TargetNumber: 0
+  - BaseNodeGUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
+    PortNumber: 1
+    TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
+    TargetNumber: 1

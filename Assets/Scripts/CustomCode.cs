@@ -12,9 +12,13 @@ public class CustomCode : MonoBehaviour
     public static bool endingActive = false;
 
     public GameObject backing;
+    public GameObject exitButton;
 
     [Header("BadEnding")]
     public GameObject BadEndingEmpty;
+
+    [Header("FightEnding")]
+    public GameObject FightEndingEmpty;
 
     public void DrawSword()
     {
@@ -51,15 +55,21 @@ public class CustomCode : MonoBehaviour
     //ENDINGS
     public void BadEnding()
     {
-        backing.GetComponent<Image>().color = Color.black;
-        backing.SetActive(true);
+        EndingSetup();
         BadEndingEmpty.SetActive(true);
-        endingActive = true;
     }
 
     public void FightEnding()
     {
-        Debug.Log("FightEnding");
+        EndingSetup();
+        FightEndingEmpty.SetActive(true);
+    }
+
+    private void EndingSetup()
+    {
+        backing.SetActive(true);
+        exitButton.SetActive(true);
+        endingActive = true;
     }
 
     private void Update()
