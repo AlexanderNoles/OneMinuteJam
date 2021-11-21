@@ -15,14 +15,20 @@ public class CustomCode : MonoBehaviour
     public GameObject exitButton;
     public Animator ani;
 
-    [Header("BadEnding")]
+    [Header("Bad Ending")]
     public GameObject BadEndingEmpty;
 
-    [Header("FightEnding")]
+    [Header("Fight Ending")]
     public GameObject FightEndingEmpty;
 
-    [Header("NothingEnding")]
+    [Header("Nothing Ending")]
     public GameObject NothingEndingEmpty;
+
+    [Header("Pun Ending")]
+    public GameObject PunEndingEmpty;
+
+    [Header("Exectued Ending")]
+    public GameObject ExecutedEndingEmpty;
 
     public void DrawSword()
     {
@@ -33,6 +39,12 @@ public class CustomCode : MonoBehaviour
     public void DKLaugh()
     {
         ani.Play("DKLaugh");
+        DialogueManagment.customCodeRunning = false;
+    }
+
+    public void DKAngry()
+    {
+        Debug.Log("DKAngry");
         DialogueManagment.customCodeRunning = false;
     }
 
@@ -71,7 +83,7 @@ public class CustomCode : MonoBehaviour
 
     IEnumerator delayedBadEnding()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(6);
         BadEnding();
     }
 
@@ -85,6 +97,18 @@ public class CustomCode : MonoBehaviour
     {
         EndingSetup();
         NothingEndingEmpty.SetActive(true);
+    }
+
+    public void PunEnding()
+    {
+        EndingSetup();
+        PunEndingEmpty.SetActive(true);
+    }
+
+    public void ExecutedEnding()
+    {
+        EndingSetup();
+        ExecutedEndingEmpty.SetActive(true);
     }
 
     private void EndingSetup()

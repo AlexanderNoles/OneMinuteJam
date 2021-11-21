@@ -8,6 +8,7 @@ public class PlayDialogue : MonoBehaviour
     private bool playing;
     public TextMeshProUGUI text;
     public float timeBetweenLetters = 0.1f;
+    private float currentTimeBetweenLetters;
     private float timeLeft;
     private string targetText;
     private int letterInString;
@@ -24,7 +25,8 @@ public class PlayDialogue : MonoBehaviour
         playing = true;
         text.text = "";
         targetText = newText;
-        timeLeft = timeBetweenLetters;
+        currentTimeBetweenLetters = timeBetweenLetters;
+        timeLeft = currentTimeBetweenLetters;
         letterInString = 0;
     }
 
@@ -32,7 +34,7 @@ public class PlayDialogue : MonoBehaviour
     {
         if (playing)
         {
-            if (text.text == targetText.Replace("|",""))
+            if (text.text == targetText.Replace("|","").Replace("^",""))
             {
                 playing = false;
                 timeLeft = timeBeforeClose;
@@ -42,13 +44,24 @@ public class PlayDialogue : MonoBehaviour
                 //Add on a new letter 
                 if (timeLeft < 0)
                 {
+
                     if(targetText[letterInString] != '|')
                     {
-                        text.text = $"{text.text}{targetText[letterInString]}";
-                        talkingSound.Play();
+                        if (targetText[letterInString] == '^')
+                        {
+                            currentTimeBetweenLetters = 0.05f;
+                        }
+                        else
+                        {
+                            text.text = $"{text.text}{targetText[letterInString]}";
+                            if (!CustomCode.endingActive)
+                            {
+                                talkingSound.Play();
+                            }
+                        }
                     }
                     ++letterInString;
-                    timeLeft = timeBetweenLetters;                
+                    timeLeft = currentTimeBetweenLetters;                
                 }
                 else
                 {
