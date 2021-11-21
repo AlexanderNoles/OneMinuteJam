@@ -35,6 +35,9 @@ public class CustomCode : MonoBehaviour
     public GameObject goodEndingSprite;
     public GameObject goodEndingEmpty;
 
+    [Header("Dance Ending")]
+    public GameObject DanceEndingEmpty;
+
     public void DrawSword()
     {
         Debug.Log("Sword Drawn");
@@ -129,16 +132,22 @@ public class CustomCode : MonoBehaviour
     }
 
     public void GoodEndingSetup()
-    {
-        endingActive = true;       
+    {    
         goodEndingSprite.SetActive(true);
         DialogueManagment.customCodeRunning = false;
     }
 
     public void ActualGoodEnding()
     {
+        endingActive = true;
         goodEndingEmpty.SetActive(true);
         exitButton.SetActive(true);
+    }
+
+    public void DanceEnding()
+    {
+        EndingSetup();
+        DanceEndingEmpty.SetActive(true);
     }
 
     private void EndingSetup()

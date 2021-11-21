@@ -1096,19 +1096,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: BurnExtraTime
-  - GUID: bd59d734-7ac4-4777-a6ad-6813ebc5a2ea
-    position:
-      serializedVersion: 2
-      x: 3439
-      y: 578
-      width: 295
-      height: 98
-    nodeType: Dialogue
-    DialogueText: Yeah, ||I guess that does make me look pretty bad
-    options: []
-    time: 0
-    values: []
-    message: 
   - GUID: 17b16804-6b02-40e9-9932-206df96360ea
     position:
       serializedVersion: 2
@@ -1363,8 +1350,8 @@ MonoBehaviour:
   - GUID: edeaac53-b713-4160-85c0-bca20ee55ad3
     position:
       serializedVersion: 2
-      x: 2856
-      y: 870
+      x: 2859
+      y: 912
       width: 136
       height: 98
     nodeType: Dialogue
@@ -1376,8 +1363,8 @@ MonoBehaviour:
   - GUID: 4ce3e630-c23b-4e73-ab99-42fc5afc4f01
     position:
       serializedVersion: 2
-      x: 3004
-      y: 869
+      x: 3007
+      y: 911
       width: 363
       height: 98
     nodeType: Dialogue
@@ -1389,8 +1376,8 @@ MonoBehaviour:
   - GUID: 9c688a75-28c4-4ad9-b608-32f8f280e8a7
     position:
       serializedVersion: 2
-      x: 3375
-      y: 868
+      x: 3378
+      y: 910
       width: 136
       height: 98
     nodeType: Custom
@@ -1402,8 +1389,8 @@ MonoBehaviour:
   - GUID: 7bf61808-7eb9-4372-ba41-c072a10e20f7
     position:
       serializedVersion: 2
-      x: 3520
-      y: 868
+      x: 3523
+      y: 910
       width: 136
       height: 98
     nodeType: Custom
@@ -1415,12 +1402,103 @@ MonoBehaviour:
   - GUID: fd0b8d2a-745e-41ea-8be9-cccaffc248e1
     position:
       serializedVersion: 2
-      x: 3660
-      y: 867
+      x: 3663
+      y: 909
       width: 330
       height: 98
     nodeType: Dialogue
     DialogueText: Now there's not enough time to even do my opening line
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: c8670add-3cff-4f3f-9908-2577ffeedf28
+    position:
+      serializedVersion: 2
+      x: 2858
+      y: 1034
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: ...
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: 7180941b-97b5-4e31-8df0-99071e2bce42
+    position:
+      serializedVersion: 2
+      x: 3008
+      y: 1033
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: BurnExtraTime
+  - GUID: 2fbc0a76-63c8-49ff-b5c1-6a53a8076b12
+    position:
+      serializedVersion: 2
+      x: 3150
+      y: 1030
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: GoodEndingSetup
+  - GUID: cb55d37c-f990-4d8b-b7d1-b80b7c2eee39
+    position:
+      serializedVersion: 2
+      x: 3305
+      y: 1031
+      width: 136
+      height: 98
+    nodeType: Pause
+    DialogueText: 
+    options: []
+    time: 2
+    values: []
+    message: 
+  - GUID: 6f0f8979-a440-4d59-99d5-88af88626039
+    position:
+      serializedVersion: 2
+      x: 3447
+      y: 1029
+      width: 136
+      height: 98
+    nodeType: Dialogue
+    DialogueText: Then lets dance
+    options: []
+    time: 0
+    values: []
+    message: 
+  - GUID: d0489ec7-9be7-45e5-b784-d3a564ad66ed
+    position:
+      serializedVersion: 2
+      x: 3596
+      y: 1029
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: DanceEnding
+  - GUID: bd59d734-7ac4-4777-a6ad-6813ebc5a2ea
+    position:
+      serializedVersion: 2
+      x: 3439
+      y: 578
+      width: 293
+      height: 98
+    nodeType: Dialogue
+    DialogueText: Crap, ||I guess that does make me look pretty bad
     options: []
     time: 0
     values: []
@@ -1849,4 +1927,32 @@ MonoBehaviour:
   - BaseNodeGUID: 7bf61808-7eb9-4372-ba41-c072a10e20f7
     PortNumber: 0
     TargetNodeGUID: fd0b8d2a-745e-41ea-8be9-cccaffc248e1
+    TargetNumber: 1
+  - BaseNodeGUID: 67bc1841-82bf-4b58-90b4-d45d2b40c4ed
+    PortNumber: 3
+    TargetNodeGUID: c8670add-3cff-4f3f-9908-2577ffeedf28
+    TargetNumber: 1
+  - BaseNodeGUID: c8670add-3cff-4f3f-9908-2577ffeedf28
+    PortNumber: 0
+    TargetNodeGUID: 7180941b-97b5-4e31-8df0-99071e2bce42
+    TargetNumber: 1
+  - BaseNodeGUID: 7180941b-97b5-4e31-8df0-99071e2bce42
+    PortNumber: 0
+    TargetNodeGUID: 2fbc0a76-63c8-49ff-b5c1-6a53a8076b12
+    TargetNumber: 1
+  - BaseNodeGUID: 2fbc0a76-63c8-49ff-b5c1-6a53a8076b12
+    PortNumber: 0
+    TargetNodeGUID: cb55d37c-f990-4d8b-b7d1-b80b7c2eee39
+    TargetNumber: 0
+  - BaseNodeGUID: cb55d37c-f990-4d8b-b7d1-b80b7c2eee39
+    PortNumber: 1
+    TargetNodeGUID: 6f0f8979-a440-4d59-99d5-88af88626039
+    TargetNumber: 1
+  - BaseNodeGUID: 6f0f8979-a440-4d59-99d5-88af88626039
+    PortNumber: 0
+    TargetNodeGUID: d0489ec7-9be7-45e5-b784-d3a564ad66ed
+    TargetNumber: 1
+  - BaseNodeGUID: 67bc1841-82bf-4b58-90b4-d45d2b40c4ed
+    PortNumber: 1
+    TargetNodeGUID: edeaac53-b713-4160-85c0-bca20ee55ad3
     TargetNumber: 1
