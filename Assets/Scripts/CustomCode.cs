@@ -13,12 +13,16 @@ public class CustomCode : MonoBehaviour
 
     public GameObject backing;
     public GameObject exitButton;
+    public Animator ani;
 
     [Header("BadEnding")]
     public GameObject BadEndingEmpty;
 
     [Header("FightEnding")]
     public GameObject FightEndingEmpty;
+
+    [Header("NothingEnding")]
+    public GameObject NothingEndingEmpty;
 
     public void DrawSword()
     {
@@ -28,7 +32,7 @@ public class CustomCode : MonoBehaviour
 
     public void DKLaugh()
     {
-        Debug.Log("Demon King Laughing");
+        ani.Play("DKLaugh");
         DialogueManagment.customCodeRunning = false;
     }
 
@@ -59,10 +63,28 @@ public class CustomCode : MonoBehaviour
         BadEndingEmpty.SetActive(true);
     }
 
+    public void DelayedBadEnding()
+    {
+        DialogueManagment.customCodeRunning = false;
+        StartCoroutine(nameof(delayedBadEnding));
+    }
+
+    IEnumerator delayedBadEnding()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        BadEnding();
+    }
+
     public void FightEnding()
     {
         EndingSetup();
         FightEndingEmpty.SetActive(true);
+    }
+
+    public void NothingEnding()
+    {
+        EndingSetup();
+        NothingEndingEmpty.SetActive(true);
     }
 
     private void EndingSetup()
