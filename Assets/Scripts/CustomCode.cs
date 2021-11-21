@@ -14,6 +14,8 @@ public class CustomCode : MonoBehaviour
     public GameObject backing;
     public GameObject exitButton;
     public Animator ani;
+    public Animator ani2;
+    public GameObject PlayerFightEffect;
 
     [Header("Bad Ending")]
     public GameObject BadEndingEmpty;
@@ -40,7 +42,7 @@ public class CustomCode : MonoBehaviour
 
     public void DrawSword()
     {
-        Debug.Log("Sword Drawn");
+        PlayerFightEffect.SetActive(true);
         DialogueManagment.customCodeRunning = false;
     }
 
@@ -52,13 +54,13 @@ public class CustomCode : MonoBehaviour
 
     public void DKAngry()
     {
-        Debug.Log("DKAngry");
+        ani.Play("DKAngry");
         DialogueManagment.customCodeRunning = false;
     }
 
     public void FightPrep()
     {
-        Debug.Log("Fight Prep");
+        ani2.Play("FightPrep");
         DialogueManagment.customCodeRunning = false;
     }
 

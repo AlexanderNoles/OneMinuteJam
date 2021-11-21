@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using UnityEngine;
 
 public class SaveAndLoadUtility
 {
+
     private DialogueGraphView _targetGV;
     private NodeContainer _cachedContainer;
 
@@ -152,3 +154,4 @@ public class SaveAndLoadUtility
         }
     }
 }
+#endif

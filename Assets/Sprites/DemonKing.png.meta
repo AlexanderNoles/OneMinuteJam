@@ -17,6 +17,24 @@ TextureImporter:
   - first:
       213: -7398481471274720852
     second: DemonKing_4
+  - first:
+      213: -2195402879311316061
+    second: DemonKing_5
+  - first:
+      213: -7280296722091201628
+    second: DemonKing_6
+  - first:
+      213: -3320597100268527036
+    second: DemonKing_7
+  - first:
+      213: -7796696273536889858
+    second: DemonKing_8
+  - first:
+      213: 4986415619373320644
+    second: DemonKing_9
+  - first:
+      213: -2279417680221530678
+    second: DemonKing_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -206,6 +224,132 @@ TextureImporter:
       bones: []
       spriteID: ca16c5bfc40535990800000000000000
       internalID: -7398481471274720852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_5
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 728
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab77c786bc5881e0800000000000000
+      internalID: -2195402879311316061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_6
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 637
+        width: 14
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab205434b037fa90800000000000000
+      internalID: -7280296722091201628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_7
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 637
+        width: 10
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4426d44d78edae1d0800000000000000
+      internalID: -3320597100268527036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_8
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 637
+        width: 6
+        height: 330
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07575757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbc8324c029cc390800000000000000
+      internalID: -7796696273536889858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 637
+        width: 14
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9c43f269e433540800000000000000
+      internalID: 4986415619373320644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonKing_10
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 699
+        width: 4
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac596ab52b1ed50e0800000000000000
+      internalID: -2279417680221530678
       vertices: []
       indices: 
       edges: []

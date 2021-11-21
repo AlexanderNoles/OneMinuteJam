@@ -1,3 +1,5 @@
+
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -8,9 +10,9 @@ using UnityEngine.UIElements;
 
 public class DialogueEditor : EditorWindow
 {
+
     private DialogueGraphView graphView;
 
-#if UNITY_EDITOR
     [MenuItem("Dialogue/Dialogue Graph")]
     public static void OpenGraph()
     {
@@ -57,5 +59,5 @@ public class DialogueEditor : EditorWindow
             _instance.Load();
         }
     }
-#endif
 }
+#endif

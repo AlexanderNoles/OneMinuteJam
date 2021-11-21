@@ -652,13 +652,13 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2081
       y: -263
-      width: 236
+      width: 176
       height: 149
     nodeType: Choice
     DialogueText: 
     options:
     - No
-    - Fine then lets fight!
+    - '[Fight]'
     - 
     time: 0
     values: []
@@ -898,32 +898,6 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
-  - GUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
-    position:
-      serializedVersion: 2
-      x: 3438
-      y: -123
-      width: 136
-      height: 98
-    nodeType: Pause
-    DialogueText: 
-    options: []
-    time: 3
-    values: []
-    message: 
-  - GUID: 2263970a-508d-4292-a3bd-452ceb448638
-    position:
-      serializedVersion: 2
-      x: 3581
-      y: -123
-      width: 136
-      height: 98
-    nodeType: Custom
-    DialogueText: 
-    options: []
-    time: 0
-    values: []
-    message: FightEnding
   - GUID: c43a2a3b-c8c3-4b6c-92d7-6d50fd6f22c1
     position:
       serializedVersion: 2
@@ -1503,6 +1477,19 @@ MonoBehaviour:
     time: 0
     values: []
     message: 
+  - GUID: 2263970a-508d-4292-a3bd-452ceb448638
+    position:
+      serializedVersion: 2
+      x: 3437
+      y: -123
+      width: 136
+      height: 98
+    nodeType: Custom
+    DialogueText: 
+    options: []
+    time: 0
+    values: []
+    message: FightEnding
   edges:
   - BaseNodeGUID: 55e311bb-c7ae-4ab9-a349-888cffeeb9da
     PortNumber: 0
@@ -1683,14 +1670,6 @@ MonoBehaviour:
   - BaseNodeGUID: 1081aa7e-61ba-4a09-814f-f91fc1727178
     PortNumber: 0
     TargetNodeGUID: 9ffb9c64-6df1-4a8e-831a-fb5ae8e39ac0
-    TargetNumber: 1
-  - BaseNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
-    PortNumber: 0
-    TargetNodeGUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
-    TargetNumber: 0
-  - BaseNodeGUID: 6fe25548-4d13-4c27-91bf-08a3d58482e1
-    PortNumber: 1
-    TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
     TargetNumber: 1
   - BaseNodeGUID: 61c3a8e4-0bcf-4a81-bf3f-d059c157cf96
     PortNumber: 1
@@ -1955,4 +1934,8 @@ MonoBehaviour:
   - BaseNodeGUID: 67bc1841-82bf-4b58-90b4-d45d2b40c4ed
     PortNumber: 1
     TargetNodeGUID: edeaac53-b713-4160-85c0-bca20ee55ad3
+    TargetNumber: 1
+  - BaseNodeGUID: 3d50604f-81e7-47bf-b468-a522c0e5ab0b
+    PortNumber: 0
+    TargetNodeGUID: 2263970a-508d-4292-a3bd-452ceb448638
     TargetNumber: 1

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,8 +9,10 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 public class DialogueGraphView : GraphView
 {
+
     public readonly Vector2 defaultNodeSize = new Vector2(150, 200);
     private NodeData defaultNode
     {
@@ -347,6 +350,7 @@ public class DialogueGraphView : GraphView
         node.outputContainer.Remove(outputPort);
         node.values.Remove(slot.name);
     }
+
 }
 
 public class DialogueNode : Node
@@ -373,4 +377,5 @@ public class CustomMessageNode : Node
 {
     public string message;
 }
+#endif
 

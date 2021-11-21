@@ -6,6 +6,7 @@ public class BeamEffect : MonoBehaviour
 {
     public int afterSeconds;
     public float speed = 5f;
+    public float lightSpeed = 1f;
     private float cachedScaleY;
     private float cachedScaleX;
     private List<Transform> lightEffect = new List<Transform>();
@@ -33,7 +34,7 @@ public class BeamEffect : MonoBehaviour
             transform.localScale = new Vector3(Mathf.Lerp(transform.localScale.x,cachedScaleX,Time.deltaTime * speed), cachedScaleY);
             for(int i = 0; i < transform.childCount; i++)
             {
-                lightEffect[i].localScale = cachedLightEffectSize[i] + (Vector3.right * (Mathf.Cos(Time.time) / 10));
+                lightEffect[i].localScale = cachedLightEffectSize[i] + (Vector3.right * (Mathf.Cos(Time.time * lightSpeed) / 10));
             }
             if (!soundPlayed && !CustomCode.endingActive)
             {
