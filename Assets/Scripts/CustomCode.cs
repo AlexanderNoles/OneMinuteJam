@@ -17,6 +17,7 @@ public class CustomCode : MonoBehaviour
 
     [Header("Bad Ending")]
     public GameObject BadEndingEmpty;
+    public GameObject BadEndingEffect;
 
     [Header("Fight Ending")]
     public GameObject FightEndingEmpty;
@@ -29,6 +30,10 @@ public class CustomCode : MonoBehaviour
 
     [Header("Exectued Ending")]
     public GameObject ExecutedEndingEmpty;
+
+    [Header("Good Ending")]
+    public GameObject goodEndingSprite;
+    public GameObject goodEndingEmpty;
 
     public void DrawSword()
     {
@@ -67,12 +72,24 @@ public class CustomCode : MonoBehaviour
         DialogueManagment.extraTime = halfExtraTime;
     }
 
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+
 
     //ENDINGS
     public void BadEnding()
     {
-        EndingSetup();
+        BadEndingEffect.SetActive(true);
+        StartCoroutine(nameof(actualBadEnding));      
+    }
+
+    IEnumerator actualBadEnding()
+    {
+        yield return new WaitForSecondsRealtime(2);
         BadEndingEmpty.SetActive(true);
+        EndingSetup();
     }
 
     public void DelayedBadEnding()
@@ -109,6 +126,19 @@ public class CustomCode : MonoBehaviour
     {
         EndingSetup();
         ExecutedEndingEmpty.SetActive(true);
+    }
+
+    public void GoodEndingSetup()
+    {
+        endingActive = true;       
+        goodEndingSprite.SetActive(true);
+        DialogueManagment.customCodeRunning = false;
+    }
+
+    public void ActualGoodEnding()
+    {
+        goodEndingEmpty.SetActive(true);
+        exitButton.SetActive(true);
     }
 
     private void EndingSetup()

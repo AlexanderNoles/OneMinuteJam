@@ -35,7 +35,7 @@ public class BeamEffect : MonoBehaviour
             {
                 lightEffect[i].localScale = cachedLightEffectSize[i] + (Vector3.right * (Mathf.Cos(Time.time) / 10));
             }
-            if (!soundPlayed)
+            if (!soundPlayed && !CustomCode.endingActive)
             {
                 beamSound.Play();
                 soundPlayed = true;
